@@ -1,0 +1,6 @@
+<h1><%= @task.name %></h1>
+<p>Status: <%= @task.status(@task) %></p>
+<%= link_to "Back to all", tasks_path %>
+<br>
+<%= link_to "Edit", edit_task_path(@task) %>
+<%= link_to "Delete", task_path(@task), :confirm => 'Are you sure?', :method => :delete %>
